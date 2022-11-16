@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="portfolio.js"></script>
+    <title>Naila Rodríguez Portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="inicio" class="principal">
+            <p class="titulo__principal">Naila Rodríguez</h1>
+            <p class="texto__principal">Desarrolladora y Diseñadora de páginas Web</p>
+            <div class="avatar"></div>
+            <div class="container">
+                <div class="container1">
+                    <div class="caja1 cajaz"></div>
+                    <div class="caja2 caja"></div>
+                    <div class="caja3 cajaz"></div>
+                    <div class="caja4 caja"></div>
+                    <div class="caja5 cajaz"></div>
+                    <div class="caja6 caja"></div>
+                    <div class="caja7 cajaz"></div>
+                    <div class="caja8 caja"></div>
+                    <div class="caja9 cajaz"></div>
+                </div>
+                <div class="container1">
+                    <div class="caja1 caja"></div>
+                    <div class="caja2 cajaz"></div>
+                    <div class="caja3 caja"></div>
+                    <div class="caja4 cajaz"></div>
+                    <div class="caja5 caja"></div>
+                    <div class="caja6 cajaz"></div>
+                    <div class="caja7 caja"></div>
+                    <div class="caja8 cajaz"></div>
+                    <div class="caja9 caja"></div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="navegacion">
+        <button class="fondo sobremi" onclick="abrirPagina('sobremi', this, '#eda2c080')"><a href="#sobremi">Sobre mí</a></button>
+        <button class="fondo proyectos" onclick="abrirPagina('proyectos', this, '#a2d6f980')"><a href="#proyectos">Proyectos</a></button>
+        <button class="fondo contacto" onclick="abrirPagina('contacto', this, '#ff824380')"><a href="#contacto">Contacto</a></button>
+    </div>
+    <div id="sobremi" class="contenido">
+        <p class="texto__contenido">Me llamo Naila Rodríguez Cabrera soy de Lanzarote, Islas Canarias. LLegué a este mundo del desarrollo web por una oportunidad en el momento adecaduado, y se ha convertido en una de mis pasiones. Actualmente manejo lenguaje de etiquetas HTML5, hoja de estilo CSS y programación frontend en JavaScript y backend en PHP.</p>
+        <img class="img__diploma" src="diploma.png" alt="diploma">
+        <a href="#inicio" onclick="cerrarPagina('sobremi', this, '#eda2c080')"><img class="imag1" src="flechas/sobremi.png" alt="flechas"></a>
+    </div>
+    <div id="proyectos" class="contenido">
+        <p class="texto__contenido">A continuación expongo capturas de pantalla de proyectos que he realizado, unos son realizados a asociaciones y entidades del municipio de Tías, en un PFAE que realice, y otras son imagenes de Web que rediseño para practicar y adquirir más experiencia.</p>
+        <div class="navegacion1">
+            <div class="fondo1 diseño">𖥸 Diseños 𖥸</div>
+        </div> 
+        <div id="diseño" class="contenido1">
+            <h3 class="contenido1_titulo1">꧁Logos꧂</h3>
+            <br>
+            <img class="img2" src="logos/CARBUS.png" alt="carbus">
+            <img class="img3" src="logos/logo.png" alt="logo">
+            <img class="img" src="logos/gimnasio.png" alt="gimnasio">
+            <img class="img1" src="logos/REPUESTOS.png" alt="repuestos">
+            <img class="img4" src="logos/lobo.png" alt="lobo">
+            <img class="img5" src="logos/Koalita Shop.png" alt="tienda">
+            <img class="img6" src="logos/montaña.png" alt="montaña">
+        </div>
+        <div id="diseño" class="contenido2">
+            <h3 class="contenido2_titulo2">꧁Trabajos꧂</h3>
+            <br>
+            <img src="paginas/agencia.png" alt="agencia">
+            <img src="paginas/coffe.png" alt="coffe">
+            <img src="paginas/marca.png" alt="marca">
+        </div>
+        <img class="img_logo" src="logo.png" alt="logo">
+        <div class="navegacion2">
+            <div class="fondo2 web">𖥸 Páginas Web 𖥸</div>
+            <div id="diseño" class="contenido3">
+                <img class="img7" src="webs/gymkana.png" alt="gymkana">
+                <img class="img8" src="webs/neo.png" alt="cuidadores">
+            </div>
+            <div class="contenido4">
+                <img class="img9" src="webs/repuestos.png" alt="evaluable">
+                <img class="img10" src="webs/sorteo.png" alt="sorteo">
+            </div>
+        </div>
+        <img class="img_logo1" src="logo.png" alt="logo">
+        <a href="#inicio" onclick="cerrarPagina('proyectos', this, '#a2d6f980')"><img class="imag1" src="flechas/proyectos.png" alt="flechas"></a>
+    </div>
+    <div id="contacto" class="contenido">
+        <p class="texto__contenido">Puedes contactar conmigo a través de linkedIn</p>
+        <a href="https://www.linkedin.com/in/naila-mar%C3%ADa-rodr%C3%ADguez-cabrera-aa7aab1ba/" target="_blank"><img class="img11" src="linken/linken.png" alt="linkedIn"/></a>
+        <a href="#inicio" onclick="cerrarPagina('contacto', this, '#ff824380')"><img class="imag1" src="flechas/contacto.png" alt="flechas"></a>
+    </div>
+</body>
+</html>

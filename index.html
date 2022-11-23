@@ -48,14 +48,14 @@
         
     </header>
     <div class="navegacion">
-        <button class="fondo sobremi" onclick="abrirPagina('sobremi', this, '#eda2c080')"><a href="#sobremi">Sobre mí</a></button>
-        <button class="fondo proyectos" onclick="abrirPagina('proyectos', this, '#a2d6f980')"><a href="#proyectos">Proyectos</a></button>
-        <button class="fondo contacto" onclick="abrirPagina('contacto', this, '#ff824380')"><a href="#contacto">Contacto</a></button>
+        <button class="fondo sobremi" id="boton_sobremi" onclick="abrirPagina('sobremi', this, '#eda2c080'), botones()"><a href="#sobremi">Sobre mí</a></button>
+        <button class="fondo proyectos" id="boton_proyecto" onclick="abrirPagina('proyectos', this, '#a2d6f980'), botones1()"><a href="#proyectos">Proyectos</a></button>
+        <button class="fondo contacto" id="boton_contacto" onclick="abrirPagina('contacto', this, '#ff824380'), botones2()"><a href="#contacto">Contacto</a></button>
     </div>
     <div id="sobremi" class="contenido">
         <p class="texto__contenido">Me llamo Naila Rodríguez Cabrera soy de Lanzarote, Islas Canarias. LLegué a este mundo del desarrollo web por una oportunidad en el momento adecaduado, y se ha convertido en una de mis pasiones. Actualmente manejo lenguaje de etiquetas HTML5, hoja de estilo CSS y programación frontend en JavaScript y backend en PHP.</p>
         <img class="img__diploma" src="diploma.png" alt="diploma">
-        <a href="#inicio" onclick="cerrarPagina('sobremi', this, '#eda2c080')"><img class="imag1" src="flechas/sobremi.png" alt="flechas"></a>
+        <a href="#inicio" onclick="cerrarPagina('sobremi', this, '#eda2c080'), boton1()"><img class="imag1" src="flechas/sobremi.png" alt="flechas"></a>
     </div>
     <div id="proyectos" class="contenido">
         <p class="texto__contenido">A continuación expongo capturas de pantalla de proyectos que he realizado, unos son realizados a asociaciones y entidades del municipio de Tías, en un PFAE que realice, y otras son imagenes de Web que rediseño para practicar y adquirir más experiencia.</p>
@@ -93,12 +93,12 @@
             </div>
         </div>
         <img class="img_logo1" src="logo.png" alt="logo">
-        <a href="#inicio" onclick="cerrarPagina('proyectos', this, '#a2d6f980')"><img class="imag1" src="flechas/proyectos.png" alt="flechas"></a>
+        <a href="#inicio" onclick="cerrarPagina('proyectos', this, '#a2d6f980'), boton2()"><img class="imag1" src="flechas/proyectos.png" alt="flechas"></a>
     </div>
     <div id="contacto" class="contenido">
         <p class="texto__contenido">Puedes contactar conmigo a través de linkedIn</p>
         <a href="https://www.linkedin.com/in/naila-mar%C3%ADa-rodr%C3%ADguez-cabrera-aa7aab1ba/" target="_blank"><img class="img11" src="linken/linken.png" alt="linkedIn"/></a>
-        <a href="#inicio" onclick="cerrarPagina('contacto', this, '#ff824380')"><img class="imag1" src="flechas/contacto.png" alt="flechas"></a>
+        <a href="#inicio" onclick="cerrarPagina('contacto', this, '#ff824380'), boton3()"><img class="imag1" src="flechas/contacto.png" alt="flechas"></a>
     </div>
 </body>
 </html>

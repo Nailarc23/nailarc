@@ -189,4 +189,58 @@
         width: 40%;
         margin-left: 6.5em;
     }
+    .img{
+        width: 30%;
+        margin-left: 0.5em;
+    }
+    .img1{
+        width: 30%;
+        margin-left: 7em;
+    }
+    .img2{
+        width: 30%;
+        margin-left: 0.5em;
+    }
+    .img3{
+        width: 30%;
+        margin-left: 7em;
+    }
+    .img4{
+        width: 30%;
+        margin-left: 0.5em;
+    }
+    .img5{
+        width: 30%;
+        margin-left: 7em;
+    }
+    .img6{
+        width: 30%;
+        margin-left: 7.3em;
+        margin-bottom: 2em;
+    }
+    .img11, .img12, .img13{
+        width: 80%;
+    }
+    .img12, .img13{
+        margin-left: 2em;
+    }
+    .img11{
+        margin-left: 2em;
+    }
+    .img7{
+        margin-top: 2em;
+        width: 45%;
+        margin-left: 5.5em;
+    }
+    .img8{
+        width: 95%;
+        margin-left: 1em;
+    }
+    .img9, .img10{
+        width: 95%;
+        margin-left: 1em;
+    }
+    .img10{
+        margin-bottom: 3em;
+    }
 }

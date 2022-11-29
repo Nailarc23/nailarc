@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(sorteo.webp);
+    height: 170px;
+}
+.titulo_sorteo{
+    margin-left: 650px;
+    padding-top: 35px;
+}
+.boton_empezar{
+    margin-left: 630px;
+    height: 35px;
+    width: 225px;
+    margin-top: 35px;
+}
+.texto_sorteo{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(163, 63, 96);
+}
+.boton_sorteo{
+    margin-left: 630px;
+    height: 35px;
+    width: 255px;
+}
+.ganador{
+    margin-left: 630px;
+    font-size: 45px;
+    color: rgb(163, 63, 96);
+}
+.boton_nuevo_sorteo{
+    margin-left: 630px;
+    height: 35px;
+    width: 255px;
+    margin-bottom: 25px;
+}
+.container{
+    display:flex;
+    justify-content:space-evenly;
+}
+button{
+    border: 2px solid rgb(245, 131, 55);
+    border-radius: 15px;
+    background-color: rgb(240, 190, 137);
+    font-size: 25px;
+}
+.ganador1{
+    border: 2px solid rgb(245, 131, 55);
+    border-radius: 15px;
+    background-color: rgb(240, 190, 137);
+    font-size: 25px;
+    margin-left: 630px;
+    height: 35px;
+    width: 255px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+

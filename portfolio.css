@@ -325,6 +325,11 @@
     .img15{
         margin-top: 120px;
     }
+    .img16{
+        position: absolute;
+         top: 140px;
+         right: 10px;
+        }
     .img11{
         margin-top: 50px;
         margin-left: 600px;

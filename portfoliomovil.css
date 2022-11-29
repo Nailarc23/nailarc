@@ -240,9 +240,11 @@
         width: 95%;
         margin-left: 1em;
     }
-    .img15{
+    .img15, .img16{
         width: 95%;
         margin-left: 1em;
+    }
+    .img16{
         margin-bottom: 3em;
     }
 }

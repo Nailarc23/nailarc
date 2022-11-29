@@ -1,0 +1,368 @@
+/* Este es el css de los diferentes section que tengo en la página web */
+
+/* Aquí empieza el css de la section */
+.section{
+    margin-bottom: 255px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 50% 50% 50%;
+    grid-template-areas: "texto1 img1"
+                         "img2 texto2"
+                         "texto3 img3";
+}
+.texto1{
+    grid: texto1;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+.texto2{
+    grid: texto2;
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 25%;
+    margin-bottom: 30px;
+}
+.texto3{
+    grid: texto3;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 25%;
+}
+.text{
+    font-size: 1em;
+}
+.img1{
+    grid-area: img1;
+    border-radius: 100%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+.img2{
+    grid-area: img2;
+    border-radius: 100%;
+    margin-left: 55%;
+    margin-bottom: 30px;
+
+}
+.img3{
+   grid-area: img3;
+   border-radius: 100%;
+   margin-left: 150px;
+}
+
+/* Aquí empieza el css de la section1 */
+.ventas{
+    position: absolute;
+    color: #eb5e28;
+    margin-left: 650px;
+}
+.titulo_section1{
+    color: #eb5e28;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.texto_section1{
+    color: #403D39;
+    text-align: center;
+    margin-bottom: 45px;
+}
+ #chartdiv{
+    background: linear-gradient(  #282828 70%, #ccc5b9) ; 
+}
+
+/* Aquí empieza el css de la section2 */
+.titulo_section2{
+    color:#eb5e28;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.texto_section2{
+    color: #403D39;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.section2 form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.email_section2{
+    position: relative;
+    background-color: #eb5e28;
+    border-radius: 25px;
+    border: none;
+    width: 450px;
+    color: #fffcf2;
+    padding: 10px;
+ 
+}
+.boton_section2{
+   position: relative;
+    color: #eb5e28;
+    border-radius: 25px;
+    border: 2px solid #eb5e28;
+    background: inherit;
+    width: 150px;
+    padding: 10px;
+}
+.section2{
+    background: #ccc5b9; 
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 10vh;
+}
+
+/* Aquí empieza el css de la section3 */
+.video{
+    width: 95%;
+    margin-left: 35px;
+    height: 50vh;
+    object-fit: cover;
+}
+.section3{
+    padding-bottom: 65px;
+    background: #ccc5b9; 
+}
+
+/* Aquí empieza el css de la section4 */
+.section4{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient( #ccc5b9, transparent 80%);
+    margin-bottom: 50px;
+}
+.info{
+    margin-left: 75px;
+    text-align: justify;
+}
+.titulo_section4{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #eb5e28;
+}
+.texto_section4{
+    font-size: 25px;
+    color: #403D39;
+
+}
+.container_imagenes{
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(2, 180px);
+    column-gap: 2em;
+    row-gap: 2em;
+    padding: 5em;
+    margin-top: 3em;
+
+}
+.imagen_section4{
+    height: 180px;
+}
+.imagen1_section4{
+    height: 250px;
+    position: relative;
+    top: 20%;
+}
+.imagen_pequeña{
+text-align: right;
+}
+.imagen2_section4{
+    height: 120px;
+    text-align: right;
+}
+
+/* Aquí empieza el css de la section5 */
+.section5{
+    margin-bottom: 255px;
+}
+.info1{
+    margin-left: 105px;
+    text-align: justify;
+}
+.titulo_section5{
+    color: #eb5e28;
+}
+.texto_section5{
+    margin-bottom: 15px;
+}
+
+/* Aquí empieza el css de la tabla de la section5 */
+.coche{
+    margin-top: -170px;
+    margin-left: 870px;
+    border: 1px solid #eb5e28;
+}
+#color{
+    word-spacing: 25px;
+    background-color: #403D39;
+    border: 2px solid #403D39;
+    color: #eb5e28;
+}
+#color1, #color3{
+    background-color: #ccc5b9;
+    border: 2px solid #ccc5b9;
+    color: #282828;
+    
+}
+#color2, #color4{
+    background-color: #fffcf2;
+    border: 2px solid #fffcf2;
+    color: #282828;
+    
+}
+.modelo_section5{
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+.marca_section5{
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+.año_section5{
+    padding-right: 100px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+
+/* Aquí empieza el css de la section6 */
+.section6{
+    margin-bottom: 150px;
+    background: #ccc5b9; 
+}
+.info2{
+    margin-left: 105px;
+    text-align: justify;
+}
+.titulo_section6{
+    color: #eb5e28;
+    font-weight: bold;
+}
+.titulo1_section6{
+    color: #eb5e28;
+}
+.titulo2_section6{
+    color: #eb5e28;
+}
+.texto_section6{
+    margin-bottom: 50px;
+    color: #fffcf2;
+}
+
+
+/* Aquí empieza el css del formulario de la section6 */
+.section6 form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.section6_1{
+   padding: 155px;
+}
+::placeholder{
+    color: #fffcf2;
+}
+.nombre1{
+    position: absolute;
+    background-color: #ea9371;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    color: #fffcf2;
+    margin-left: 1050px;
+    margin-top: -285px;
+}
+.email1{
+    position: absolute;
+    background-color: #ea9371;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    color: #fffcf2;
+    margin-left: 1050px;
+    margin-top: -185px;
+}
+.boton1{
+    position: absolute;
+    color: #eb5e28;
+    border-radius: 25px;
+    border: 2px solid #ea9371;
+    background: inherit;
+    width: 250px;
+    padding: 10px;
+    margin-left: 1050px;
+    margin-top: 45px;
+} 
+/* Aqui empieza el css del checkbox*/
+#texto{
+    color: #fffcf2;
+}
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 1030px;
+    margin-top: -85px;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.marca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+.checkbox:hover input ~ .marca {
+    background-color: #403D39;
+}
+.checkbox input:checked ~ .marca {
+    background-color: #eb5e28;
+}
+.marca:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .marca:after {
+    display: block;
+}
+.checkbox .marca:after {
+    left: 3px;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

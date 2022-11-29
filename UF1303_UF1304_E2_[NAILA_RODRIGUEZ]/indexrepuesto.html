@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Esto hace referencia a la parte de arriba del buscador -->
+    <title>REPUESTOS</title>
+    <link rel="icon" href="imagenes/favicon/favicon.png">
+
+    <!-- Esto hace referencia a los diferentes meta utilizados en esta página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Naila María Rodríguez Cabrera" content="esta es la página de una tienda de repuestos de coche" />
+
+    <!-- Esto hace referencia a los javascript de las diferentes section de la página-->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+
+    <!-- Esto hace referencia a la hoja de estilo de la página -->
+    <link rel="stylesheet" href="estilo/estilorepuesto.css">
+
+    <!-- Estas son las hojas de estilo por separado -->
+    <!-- <link rel="stylesheet" href="estilo/estiloheader.css">
+    <link rel="stylesheet" href="estilo/estiloslider.css">
+    <link rel="stylesheet" href="estilo/estilosection.css">
+    <link rel="stylesheet" href="estilo/estilofooter.css"> -->
+
+<!-- Tipo de fuentes utilizadas en la página -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Utilizada para los titulos -->
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <!-- Utilizada para los textos -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- La página utilizada para la paleta de colores es la siguiente https://coolors.co/-->
+<!-- La página para encontrar los iconos es la siguiente https://iconmonstr.com/ -->
+<!-- La página utilizada para hacer la gráfica es la siguiente https://live.amcharts.com/  -->
+<!-- La página utilizada para validar la página es la siguiente https://validator.w3.org/#validate_by_upload -->
+<body>
+
+    <!-- Aquí empieza el header -->
+    <header>
+        <div class="container_nav">
+            <img class="logo_container" src="imagenes/nav/logo.png" alt="logo">
+            <h2 class="titulo_container">AUTODOC</h2>
+        </div>
+        <div id="nav_desplegable" class="nav">
+            <nav>
+                <a href="javascript:void(0)" class="cerrar" onclick="closeNav()">×</a>
+                <a href="#">Servicios</a>
+                <a href="#">Repuestos</a>
+                <a href="#">Tienda</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </div>
+        <button class="abrir" id="nav_container" onclick="openNav()"> ☰ </button>
+    </header>
+
+    <!-- Aquí empieza la section del slider -->
+    <div class="slider">
+        <div class="slider_section fade">
+            <img class="slider_img" src="imagenes/slider/color1.png" alt="color_slider">
+        </div>
+        <div class="slider_section fade">
+            <img class="slider_img" src="imagenes/slider/color2.png" alt="color_slider">
+        </div>
+        <div class="slider_section fade">
+            <img class="slider_img" src="imagenes/slider/color3.png" alt="color_slider">
+        </div>
+        <div class="slider_section fade">
+            <img class="slider_img" src="imagenes/slider/color5.png" alt="color_slider">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="circulo">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <h1 class="h1_slider">AUTODOC</h1>
+        <h1 class="h1_1_slider">Empresa de Repuestos</h1>
+        <div class="info">
+            <img class="img_slider" src="imagenes/slider/imagenslider.png" alt="imagendeslider" />
+            <p class="p_slider">Repuestos y Servicios fue constituida en el año<br>
+                1987 como continuidad de los negocios de<br>
+                Autodoc, dedicada a la venta de a todo tipo de repuestos.</p>
+        </div>
+        <h2 class="h2_slider">Repuestos</h2>
+        <h3 class="h3_slider">Contacte con nosotros</h3>
+        <form action="#" method="post">
+            <input class="nombre" type="text" id="name" name="name" placeholder="Nombre y Apellidos" required><br><br>
+            <input class="email" type="email" id="correo" name="correo" placeholder="Correo electrónico"
+                required><br><br>
+            <input class="phone" type="tel" id="phone" name="phone" placeholder="Tel.Móvil"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <input class="boton" type="submit">
+        </form>
+    </div>
+
+     <!-- Aquí empieza la section-->
+    <div class="section">
+        <p class="texto1 text">Nuestra nave se encuentra en unos de los mejores sitios de Alemania <br>y cuenta con una superficie de 2500 metros, ya que trabajamos con<br> toda clase de repuestos y complementos para el coche(Sillita para coche, parasol, etc).<br>
+        Contamos con total de 500 profesionales que aman su trabajo y están dedicados al 100%.</p>
+        <img class="img1 " src="imagenes/section/naveautodoc.jfif" alt="nuestra nave"/>
+        <img class="img2" src="imagenes/section/almacenaautodoc.jfif" alt="almacenes de autodoc"/>
+        <p class="texto2 text">Nuestros almacenes están ordenados por orden alfabético y por orden de número de pedido. O sea quiere <br>decir que el primer pedido que llego tiene más<br> preferencia en salir que el último pedido que entro, porque sino los que llevan más<br> tiempo se descatologan y nos quedamos con ellos en el almacen ocupando espacio.</p>
+        <p class="texto3 text">Nuestro servicio de empaquetamiento es muy cuidadoso, <br>siempre protegiendo el producto y tratandolo con mimo <br>para que llegue en buen estado al destinatario. Usando materiales de buena calidad<br> conseguimos que el producto este más protegido y es díficil de romper.</p>
+        <img class="img3" src="imagenes/section/epaquetacionautodoc.jfif" alt="epaquetar"/>  
+    </div>
+
+     <!-- Aquí empieza la section1-->
+    <div class="section1">
+        <h1 class="titulo_section1">Beneficios</h1>
+        <p class="texto_section1">En Autodoc somos los únicos como proveedores de referencia de recambios a nivel
+            nacional,<br>
+            apostamos por desarrollar nuevas herramientas tecnológicas que beneficien a todas las partes implicadas
+            en<br>
+            el proceso de venta e instalación de recambios.</p>
+        <p class="ventas">Ventas durante el año</p>
+        <div id="chartdiv"></div>
+    </div>
+
+     <!-- Aquí empieza la section2-->
+    <div class="section2">
+        <h1 class="titulo_section2">Descuento para clientes nuevos</h1>
+        <p class="texto_section2">Para registrarte en nuestra página introduce tu correo electrónico y obtenga grandes
+            sorpresas y descuentos.</p>
+        <form action="#" method="post">
+            <input class="email_section2" type="email" id="email" name="email" placeholder="Correo electrónico"
+                required>
+            <input class="boton_section2" type="submit">
+        </form>
+    </div>
+
+     <!-- Aquí empieza la section3-->
+    <div class="section3">
+        <video class="video" src="video/autodoc.mp4" controls></video>
+    </div>
+
+     <!-- Aquí empieza la section4-->
+    <div class="section4">
+        <div class="info">
+            <h1 class="titulo_section4">Lista de Oportunidades</h1>
+            <p class="texto_section4">Aquí puedes encontrar los productos que están a punto de salir al mercado. <br>Los
+                tenemos en oferta hasta agotar existencias o hasta que acabe el mes de Julio, <br>date prisa y no dejes
+                escapar estas ofertas. Si no te da tiempo,<br> en Agosto salen a la venta pero no tendrán descuento.</p>
+        </div>
+        <div class="container_pre_imagenes">
+            <div class="container_imagenes">
+                <img class="imagen_section4" src="imagenes/section4/imgrespuesto.jfif" alt="repuesto" />
+                <img class="imagen1_section4" src="imagenes/section4/imgrespuesto1.jfif" alt="repuesto1" />
+                <div class="imagen_pequeña">
+                    <img class="imagen2_section4" src="imagenes/section4/imgrespuesto2.jfif" alt="repuesto2" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Aquí empieza la section5-->
+    <div class="section5">
+        <article class="info1">
+            <h2 class="titulo_section5">Compruebe su modelo de coche</h2>
+            <p class="texto_section5">A parte de las marcas europeas, americanas y japonesas pareciera que no existen más, <br>pues al fin y al cabo son las marcas dominantes de la industria de industrias.<br> Sin embargo, hay muchos más fabricantes en el mundo que ese reducido grupo de una veintena de marcas.</p>
+            <p class="texto1_section5">Son aproximadamente 155 marcas de automóviles conocidas a nivel mundial. Algunas son artesanales y <br>las unidades fabricadas se pueden contar con los dedos de la mano e incluso algunas fabrican un modelo<br> cada 4 años,mientras que otras producen medio millón de unidades al año, pero no llegan a mercado como el nuestro.</p>
+        </article>
+        <table class="coche">
+          <tr id="color">
+            <td class="modelo_section5">MODELO</td>
+            <td class="marca_section5">MARCA</td>
+            <td class="año_section5">AÑO</td>
+          </tr>
+          <tr id="color1">
+            <td class="modelo_section5">Skoda</td>
+            <td class="marca_section5">Roomster</td>
+            <td class="año_section5">2010</td>
+          </tr>
+          <tr id="color2">
+            <td class="modelo_section5">Wolkswagen</td>
+            <td class="marca_section5">TSI</td>
+            <td class="año_section5">2016</td>
+          </tr>
+          <tr id="color3">
+            <td class="modelo_section5">Peugeot</td>
+            <td class="marca_section5">307</td>
+            <td class="año_section5">2005</td>
+          </tr>
+          <tr id="color4">
+            <td class="modelo_section5">BWM</td>
+            <td class="marca_section5">e46</td>
+            <td class="año_section5">2007</td>
+          </tr>
+        </table>
+
+    </div>
+
+     <!-- Aquí empieza la section6-->
+    <div class="section6">
+    <article class="section6_1">
+        <div class="info2">
+            <h2 class="titulo_section6">Más detalles</h2>
+            <p class="texto_section6">En este apartado podrás registrarte para tener en primicia las nuevas piezas que están por <br> entrar, date prisa las primeras 100 subcripciones tienen regalo.</p>
+            <h3 class="titulo1_section6">Subcribete</h3>
+            <h4 class="titulo2_section6">Rápido y fácil para usted</h4>
+        </div>
+        <form action="#" method="post" name="for"  onsubmit="return aceptar()">
+            <input class="nombre1" type="text" id="name1" name="name1" placeholder="Nombre y Apellidos" required><br><br>
+            <input class="email1" type="email" id="correo1" name="correo1" placeholder="Correo electrónico" required>
+            <label id="texto" class="checkbox">Acepta la Política de Datos
+                <input type="checkbox" name="politica" value="aceptado" /> 
+                <span class="marca"></span>
+              </label>
+            <input class="boton1" type="submit">
+        </form>
+    </article>
+    </div>
+  
+     <!-- Aquí empieza el footer-->
+    <footer>
+        <div class="footer">
+            <img class="logo_footer" src="imagenes/footer/logo.png" alt="logo">
+            <h2 class="titulo_footer">AUTODOC</h2>
+        </div>
+        <div class="info_footer">
+            <p class="calle">Calle Chimidas nº64, Arrecife, Lanzarote</p>
+            <p class="telefono">928-81-40-80</p>
+            <p class="email_empresa">autodoc983empresa@gmail.com</p>
+        </div>
+        <div class="icono_footer">
+            <img class="footer_face" src="imagenes/footer/facebook.png" alt="facebook"/>
+            <img class="footer_insta" src="imagenes/footer/instagram.png" alt="instagram"/>
+            <img class="footer_twitter" src="imagenes/footer/twitter.png" alt="twitter"/>
+            <img class="footer_phone" src="imagenes/footer/phone.png" alt="phone"/>
+        </div>
+        <hr class="linea">
+    </footer>
+    
+<!-- Sale warning por tener el script en la hoja del html -->
+
+    <!-- Aquí empieza el script de la barra de navegación -->
+    <script>
+        function openNav() {
+            document.getElementById("nav_desplegable").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("nav_desplegable").style.width = "0";
+        }
+    </script>
+
+       <!-- Aquí empieza el script del slider -->
+       <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slider_section");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <!-- Aquí empieza el script de la gráfica -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "serial",
+                "categoryField": "category",
+                "autoMarginOffset": 40,
+                "marginRight": 60,
+                "marginTop": 60,
+                "startDuration": 1,
+                "color": "#FF8000",
+                "fontFamily": "robotto",
+                "fontSize": 9,
+                "theme": "chalk",
+                "categoryAxis": {
+                    "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "balloonText": "[[title]] of [[category]]:[[value]]",
+                        "bullet": "round",
+                        "bulletSize": 10,
+                        "id": "AmGraph-1",
+                        "lineAlpha": 1,
+                        "lineThickness": 3,
+                        "title": "graph 1",
+                        "type": "smoothedLine",
+                        "valueField": "column-1"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "title": ""
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "titles": [],
+                "dataProvider": [
+                    {
+                        "category": "Enero",
+                        "column-1": "150"
+                    },
+                    {
+                        "category": "Febrero",
+                        "column-1": "350"
+                    },
+                    {
+                        "category": "Marzo",
+                        "column-1": "59"
+                    },
+                    {
+                        "category": "Abril",
+                        "column-1": "780"
+                    },
+                    {
+                        "category": "Mayo",
+                        "column-1": "880"
+                    },
+                    {
+                        "category": "Junio",
+                        "column-1": "453"
+                    },
+                    {
+                        "category": "Julio",
+                        "column-1": "360"
+                    },
+                    {
+                        "category": "Agosto",
+                        "column-1": "50"
+                    },
+                    {
+                        "category": "Septiembre",
+                        "column-1": "70"
+                    },
+                    {
+                        "category": "Octubre",
+                        "column-1": "900"
+                    },
+                    {
+                        "category": "Noviembre",
+                        "column-1": "720"
+                    },
+                    {
+                        "category": "Diciembre",
+                        "column-1": "140"
+                    }
+                ]
+            }
+        );
+    </script>
+
+<!-- Aquí empieza el script del checkbox -->
+    <script>
+        function aceptar() {
+            var opcion = document.for.politica; //acceso al botón
+                if (opcion.checked == true) { //botón seleccionado
+                alert("El Formulario ha sido enviado")
+            }
+            else {  //botón no seleccionado
+                alert("El formulario no ha podido enviarse. \n Debe aceptar las condiciones para poder enviar el formulario");
+                return false; //el formulario no se envia
+            }
+        }
+    </script>
+</body>
+</html>

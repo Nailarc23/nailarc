@@ -136,7 +136,7 @@
     }  
     .img11{
         margin-top: 2em;
-        margin-left: 3em;
+        margin-left: 5em;
     }
     .navegacion1{
         margin-top: 5em;
@@ -240,7 +240,9 @@
         width: 95%;
         margin-left: 1em;
     }
-    .img10{
+    .img15{
+        width: 95%;
+        margin-left: 1em;
         margin-bottom: 3em;
     }
 }

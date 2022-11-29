@@ -110,7 +110,7 @@
         background-color: rgba(162, 214, 249, 0.2);
         position: absolute;
         width: 1475px;
-        height: 3000px;
+        height: 3900px;
         top:  745px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -310,6 +310,20 @@
     position: absolute;
      top: 140px;
      right: 10px;
+    }
+    .contenido5{
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 2750px;
+        width: 1210px;
+        height: 500px;
+        padding: 19px 14px;
+        background-color: #9ed3da;
+        border-radius: 100px;
+        border-bottom-right-radius: 150px;
+    }
+    .img15{
+        margin-top: 120px;
     }
     .img11{
         margin-top: 50px;

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Prueba</title>
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <h1 class="examen">REGISTRATE EN NUESTRA PÁGINA</h1>
+    <button id="boton">Abre para comenzar</button>
+    <div id="mimodelo" class="modelo">
+        <div class="modelo-content">
+            <span class="cerrar">&times;</span>
+            <img class="comprobar" src="comprobar.png" alt="comprobar">
+            <form action="#" method="post">
+
+                <fieldset class="contenedor">
+                    <label>Nombre y Apellidos* 
+                        <br>
+                        <input type="text" name="usuario" id="usuario" required onblur="validarInputUsuario()">
+                    </label>
+                    <p id="alertaUsuario">Este campo no puede quedar vacio</p>
+                    <br>
+                    <br>
+                    <label>Email* 
+                        <br>
+                        <input type="email" name="email" id="email" required onblur="validarInputEmail()">
+                    </label>
+                    <p id="alertaEmail">Este campo no puede quedar vacio</p>
+                    <br>
+                    <br>
+                    <label>Repetir Email* 
+                        <br>
+                        <input type="email" name="email1" id="email1" required onblur="validarInputEmail1()">
+                    </label>
+                    <p id="alertaEmail1">Este campo no puede quedar vacio</p>
+                    <br>
+                    <br>
+                    <label for="marcado" class="marcado">
+                        <input type="checkbox" id="marcado"  name="marcado" value="contestacion">
+                        Sí, acepto las condiciones
+                    </label>
+                    <br>
+                    <p id="No">Debes marcar este campo</p>
+                    <br>
+                    <input type="button" value="Enviar" id="button" onclick="sioNo()">
+                </fieldset>
+                <fieldset class="contenedor1">
+                    <label>Alias* 
+                        <br>
+                        <input type="text" name="alias" id="alias" required onblur="validarInputUsuario1()">
+                    </label>
+                    <p id="alertaAlias">Este campo no puede quedar vacio</p>
+                    <br>
+                    <br>
+                    <label>Nueva contraseña* 
+                        <input type="password" name="contraseñanueva" id="contraseñanueva" required onblur="validarInput(), contraseña()">
+                    </label>
+                    <p id="alertaContraseña">Este campo no puede quedar vacio</p>
+                    <br>
+                    <br>
+                    <label>Repetir contraseña* 
+                        <input type="password" name="repetircontraseña" id="repetircontraseña" required onblur="validarInput(), contraseña1()">
+                    </label>
+                    <p id="alertaContraseña1">Este campo no puede quedar vacio</p>
+                    <p id="alertaNo">La contraseña debe ser igual en los dos campos</p>
+                    <p id="alertaSi">Contraseña correcta</p>
+                </fieldset>
+            </form>
+            <img class="contrato" src="contrato.png" alt="contrato">
+        </div>
+    </div>
+
+<script>
+    var modelo = document.getElementById("mimodelo");
+    var boton = document.getElementById("boton");
+    var span = document.getElementsByClassName("cerrar")[0];
+    boton.onclick = function() {
+      modelo.style.display = "block";
+    }
+    span.onclick = function() {
+      modelo.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modelo) {
+        modelo.style.display = "none";
+      }
+    }
+    $(document).ready(function(){
+    $("#boton").click(function(){
+        $(".contenedor").fadeIn(4000);
+        $(".contenedor1").fadeIn(4000);
+
+    });
+});
+
+    // Primer campo
+        // Creamos la funcion para nuestro input
+function validarInputUsuario(){
+
+// Creamos una variable para que que nos sea más fácil
+let valorInputUsuario = document.getElementById("usuario").value;
+
+// Lo mostramos por consola para verificar que no tenemos error
+console.log(valorInputUsuario);
+
+// Creamos el bucle para que dependiendo de si esta vacio o lleno nos salga el mensaje o no
+if(valorInputUsuario === ""){
+
+    document.getElementById("alertaUsuario").style.display= "block";
+}
+else{
+    document.getElementById("alertaUsuario").style.display= "none";
+}
+}
+function validarInputUsuario1(){
+
+// Creamos una variable para que que nos sea más fácil
+let valorInputUsuario1 = document.getElementById("alias").value;
+
+// Lo mostramos por consola para verificar que no tenemos error
+console.log(valorInputUsuario1);
+
+// Creamos el bucle para que dependiendo de si esta vacio o lleno nos salga el mensaje o no
+if(valorInputUsuario1 === ""){
+
+    document.getElementById("alertaAlias").style.display= "block";
+}
+else{
+    document.getElementById("alertaAlias").style.display= "none";
+}
+}
+function contraseña(){
+
+// Creamos una variable para que que nos sea más fácil
+let valorContraseña = document.getElementById("contraseñanueva").value;
+
+// Lo mostramos por consola para verificar que no tenemos error
+console.log(valorContraseña);
+
+// Creamos el bucle para que dependiendo de si esta vacio o lleno nos salga el mensaje o no
+if(valorContraseña === ""){
+
+    document.getElementById("alertaContraseña").style.display= "block";
+}
+else{
+    document.getElementById("alertaContraseña").style.display= "none";
+}
+}
+function contraseña1(){
+
+// Creamos una variable para que que nos sea más fácil
+let valorContraseña1 = document.getElementById("repetircontraseña").value;
+
+// Lo mostramos por consola para verificar que no tenemos error
+console.log(valorContraseña1);
+
+// Creamos el bucle para que dependiendo de si esta vacio o lleno nos salga el mensaje o no
+if(valorContraseña1 === ""){
+
+    document.getElementById("alertaContraseña1").style.display= "block";
+}
+else{
+    document.getElementById("alertaContraseña1").style.display= "none";
+}
+}
+function errorContraseñaVacia() {
+let newcontraseñainput = document.getElementById("newcontraseña").value
+if (newcontraseñainput === "") {
+    document.getElementById("errorContraseñav").style.display = "block"
+} else {
+    document.getElementById("errorContraseñav").style.display = "none"
+}
+}
+function errorContraseñaVacia1() {
+let repcontraseña = document.getElementById("repcontraseña").value
+if (repcontraseña === "") {
+    document.getElementById("errorContraseñav1").style.display = "block"
+} else {
+    document.getElementById("errorContraseñav1").style.display = "none"
+}
+}
+function validarInputEmail() {
+let email = document.getElementById("email").value
+if (email === "") {
+    document.getElementById("alertaEmail").style.display = "block"
+} else {
+    document.getElementById("alertaEmail").style.display = "none"
+}
+}
+function validarInputEmail1() {
+let email1 = document.getElementById("email1").value
+if ( email1=== "") {
+    document.getElementById("alertaEmail1").style.display = "block"
+} else {
+    document.getElementById("alertaEmail1").style.display = "none"
+}
+}
+
+// Segundo campo
+// Creamos la función para nuestros inputs
+function contraseñaValidate() {
+// llamo a los imput contraseña
+let newcontraseñainput = document.getElementById("newcontraseña").value
+let repcontraseñainput = document.getElementById("repcontraseña").value
+
+console.log(newcontraseñainput)
+console.log(repcontraseñainput)
+
+// creo una condición para comparar las dos contraseñas
+
+if (newcontraseñainput === repcontraseñainput) {
+    document.getElementById("errorContraseña").style.display = "none"
+} else {
+    document.getElementById("errorContraseña").style.display = "block"
+}
+}
+// Tercer campo
+// Creamos la funcion del onclick
+function sioNo(){
+// Creamos la variable
+let check= document.getElementById("marcado").checked;
+
+// Mostramos por consola por si tenemos fallos
+console.log(check);
+
+// Creamos un bucle para que muestre un mensaje u otro si esta o no marcado
+if(check===false){
+    document.getElementById("No").style.display="block";
+}
+else{
+    document.getElementById("No").style.display="none";
+}
+}
+function validarInput(){
+
+// Creamos las variables para nuestros inputs
+// Lo mostramos por consola para no tener fallos
+let campo1= document.getElementById("contraseñanueva").value;
+console.log(campo1);
+let campo2= document.getElementById("repetircontraseña").value;
+console.log(campo2);
+
+// Creamos el bucle para que dependiendo de si esta igual o no, nos salga el mensaje o no
+if(campo1===campo2){
+    document.getElementById("alertaSi").style.display="block";
+    document.getElementById("alertaNo").style.display="none";
+}
+else{
+    document.getElementById("alertaNo").style.display="block";
+    document.getElementById("alertaSi").style.display="none";
+}
+}
+</script>
+</body>
+</html>

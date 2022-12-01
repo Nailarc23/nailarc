@@ -284,6 +284,15 @@
         border-radius: 100px;
         border-bottom-right-radius: 150px;
     }
+    #gymkana{
+        margin-left: 140px;
+        font-size: 20px;
+    }
+    #neo{
+        margin-left: 640px;
+        font-size: 20px;
+        margin-top: -40px;
+    }
     .img7{
         margin-top: 30px;
         margin-left: 70px;
@@ -304,7 +313,7 @@
         border-bottom-right-radius: 150px;
     }
     .img9{
-        margin-top: 120px;
+        margin-top: 85px;
     }
     .img10{
     position: absolute;
@@ -334,7 +343,7 @@
         border-bottom-right-radius: 150px;
     }
     .img15{
-        margin-top: 120px;
+        margin-top: 85px;
     }
     .img16{
         position: absolute;
@@ -342,7 +351,7 @@
          right: 10px;
     }
     .img17{
-         margin-top: 120px;
+         margin-top: 85px;
     }
     .img11{
         margin-top: 50px;

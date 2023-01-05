@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://nailarc23.github.io/nailarc.github.io/[nc]
+RewriteRule ^(.*)$ http://www.https://nailarc23.github.io/nailarc.github.io//$1 [r=301,nc]
+
+//Change default directory page
+DirectoryIndex portfolio.html

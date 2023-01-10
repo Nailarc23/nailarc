@@ -29,7 +29,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 5em;
-        color: #ffff;
+        color: black;
         margin-top: 2em;
         margin-left: 1em;
     }
@@ -38,7 +38,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 2em;
-        color: #ffff;
+        color: black;
         margin-top: 3em;
         margin-left: 5em;
     }
@@ -80,13 +80,13 @@
         border-radius: 0px 350px;
         border: none;
         background-color: #75CBF0;
-        color: #ffff;
+        color: black;
         font-family: 'Fredericka the Great';
         font-size: 2em;
     }
     .fondo_container_navegacion a{
         text-decoration: none;
-        color: #ffff;
+        color: black;
     }
 
     .fondo_container_navegacion:hover{
@@ -95,7 +95,7 @@
         border-radius: 0px 350px;
         border: none;
         background-color: #75acf0;
-        color: #ffff;
+        color: black;
         font-family: 'Fredericka the Great';
         font-size: 2em;
         cursor: pointer;

@@ -1,0 +1,231 @@
+@media screen  and (max-width:480px) {
+    /* CSS del body */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #D1F1FF;
+    }
+    
+    /* CSS del container_principal */
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container_principal{
+        margin-left: 1em;
+        width: 85%;
+        height: 15rem;
+        background-color: #75CBF0;
+        border-radius: 0px 350px;
+    }
+    .titulo_principal__container{
+        font-family: 'Fredericka the Great';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        color: #ffff;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    .texto_principal__container{
+        font-family: 'Fredericka the Great';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        color: #ffff;
+        margin-top: 1em;
+        margin-left: 4em;
+    }
+    .container_secundario{
+        width: 85%;
+        margin-top: -1em;
+    }
+    .avatar{
+        width: 20em;
+        height: 20em;
+        background-color: #75CBF0;
+        border-radius: 0px 350px;
+        background-image: url(../avatar/myAvatar1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 3em;
+        margin-top: 1em;
+        transition:  background-image 1s linear;
+    }
+    /* CSS del div navegación */
+    .container_navegacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+    }
+    .fondo_container_navegacion{
+        margin-left: 3em;
+        margin-top: 1em;
+        width: 50%;
+        padding: 1em 3em;
+        border-radius: 0px 350px;
+        border: none;
+        background-color: #75CBF0;
+        color: #ffff;
+        font-family: 'Fredericka the Great';
+        font-size: 0.85em;
+    }
+    .fondo_container_navegacion a{
+        text-decoration: none;
+        color: #ffff;
+    }
+    /* CSS del div fondo_container_sobremi */
+    #sobremi{
+        display: none;
+    }
+    .fondo_container_sobremi{
+        margin-top: 6em;
+        background-color: #D1EFE2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo_container_sobremi{
+        font-family: 'Lobster';
+        font-size: 3em;
+        text-align: center;
+        padding-top: 1.5em;
+    }
+    .texto_container_sobremi{
+        font-family: 'Montserrat';
+        text-align: justify;
+        padding-top: 1.5em;
+    }
+
+    /* CSS del div container img sobre mi */
+    .img_container_sobremi{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        
+    }
+    .img_diploma, .img_gorro{
+        width: 25%;
+    }
+        /* CSS del div fondo_container_contacto */
+        #contacto{
+            display: none;
+        }
+        .fondo_container_contacto{
+            margin-top: 6em;
+            background-color: #D1EFE2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .titulo_container_contacto{
+            font-family: 'Lobster';
+            font-size: 3em;
+            text-align: center;
+            padding-top: 1.5em;
+        }
+        .texto_container_contacto{
+            font-family: 'Montserrat';
+            text-align: justify;
+            padding-top: 1.5em;
+        }
+    
+        /* CSS del div container img contacto */
+        .img_container_contacto{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            justify-content: space-around;
+            padding-bottom: 2.5em;     
+        }
+        .img_link, .img_net{
+            width: 25%;
+        }
+        .img_git{
+            width: 50%;
+        }
+
+        /* CSS del div fondo_container_proyecto */
+        h3{
+            text-align: center;
+        }
+
+    #proyecto{
+        display: none;
+        width: 100%;
+    }
+    .fondo_container_proyecto{
+        margin-top: 6em;
+        background-color: #D1EFE2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo_container_proyecto{
+        font-family: 'Lobster';
+        font-size: 3em;
+        text-align: center;
+        padding-top: 1.5em;
+    }
+    .texto_container_proyecto{
+        font-family: 'Montserrat';
+        text-align: justify;
+        padding-top: 1.5em;
+        padding: 2em;
+    }
+
+    .contenedores_proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_container1_proyecto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_container2_proyecto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_container3_proyecto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_container4_proyecto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7{
+        width: 55%;
+    }
+ 
+
+    /* CSS del div container imagen flecha */
+    .img_flecha_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img_flecha{
+        width: 50%;
+    }
+}
